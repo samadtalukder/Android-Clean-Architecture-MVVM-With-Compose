@@ -30,23 +30,32 @@ The project follows the MVVM (Model-View-ViewModel) architecture pattern to sepa
 
 ### Directory Structure
  ```
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/
-│   │   │   │   ├── data/            # Data layer
-│   │   │   │   │   ├── local/       # Local database
-│   │   │   │   │   ├── remote/      # Network API
-│   │   │   │   │   └── repository/  # Data repositories
-│   │   │   ├── domain/              # Business logic
-│   │   │   │   ├── model/           # Domain models
-│   │   │   │   ├── usecase/         # Business logic
-│   │   │   │   └── repository/      # Repository interfaces
-│   │   │   └── presentation/        # UI components
-│   │   │       ├── viewmodel/       # ViewModels
-│   │   │       └── ui/              # Compose UI
-│   │   │   └── utils/               # Utilites
-│   │   │       └──   
+app/
+├── di/                  # Dependency Injection
+│   ├── 
+├── data/                # Data Layer
+│   ├── remote/
+│   │   ├── api/         # Retrofit interfaces
+│   │   └── dto/         # Data Transfer Objects
+│   ├── local/
+│   │   ├── dao/         # Room DAOs
+│   │   └── entity/      # Room Entities
+│   ├── repository/      # Repository implementations
+├── domain/              # Domain Layer
+│   ├── model/           # Domain models
+│   ├── repository/      # Repository interfaces
+│   └── usecase/         # Business logic use cases
+├── presentation/        # UI Layer
+│   ├── common/
+│   │   ├── components/  # Reusable Compose components
+│   │   ├── theme/       # App theme
+│   └── features/        # Features organized by screens
+│       ├── auth/
+│       │   ├── LoginScreen.kt
+│       │   └── LoginViewModel.kt
+└── util/                # App utilities
+    ├── extension/       # Kotlin extensions
+    └── Constants.kt 
  ```
 
 ## 🚀 Getting Started
