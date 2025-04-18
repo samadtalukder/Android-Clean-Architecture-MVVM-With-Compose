@@ -45,7 +45,7 @@ app/
 │   ├── model/           # Domain models
 │   ├── repository/      # Repository interfaces
 │   └── usecase/         # Business logic use cases
-├── presentation/        # UI Layer
+├── ui/                  # UI Layer
 │   ├── common/
 │   │   ├── components/  # Reusable Compose components
 │   │   ├── theme/       # App theme
@@ -53,7 +53,7 @@ app/
 │       ├── auth/
 │       │   ├── LoginScreen.kt
 │       │   └── LoginViewModel.kt
-└── util/                # App utilities
+└── utils/                # App utilities
     ├── extension/       # Kotlin extensions
     └── Constants.kt 
  ```
