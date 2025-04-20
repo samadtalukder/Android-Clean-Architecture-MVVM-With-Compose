@@ -16,4 +16,8 @@ val White = Color(0xFFFFFFFF)
 val Black = Color(0xFF000000)
 
 val PrimaryTextColor = Color(0xFF32343E)
+val RestaurantTextColor = Color(0xFF181C2E)
+val RestaurantGrayTextColor = Color(0xFFA0A5BA)
 val SecondaryTextColor = Color(0xFF646982)
+val OrangeTextColor = Color(0xFFFC6E2A)
+val GrayTextColor = Color(0xFF676767)

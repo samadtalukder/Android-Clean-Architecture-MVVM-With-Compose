@@ -11,7 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
-import com.samad_talukder.mvvmcompose.ui.common.theme.White
+import com.samad_talukder.mvvmcompose.ui.common.theme.Black
 
 /**
  *  Copyright (C) 2024. Samad Talukder (https://www.samadtalukder.com)
@@ -21,8 +21,8 @@ import com.samad_talukder.mvvmcompose.ui.common.theme.White
 fun CustomText(
     text: String,
     modifier: Modifier = Modifier,
-    style: TextStyle = MaterialTheme.typography.bodyMedium,
-    textColor: Color = White,
+    style: TextStyle = MaterialTheme.typography.displayLarge,
+    textColor: Color = Black,
     fontSize: TextUnit = 16.sp,
     fontWeight: FontWeight = FontWeight.W400,
     lineHeight: TextUnit = fontSize * 1.5,
