@@ -18,9 +18,9 @@ fun CustomImage(
 
     ) {
     Image(
-        modifier = modifier,
-        contentScale = contentScale,
         painter = painterResource(id = image),
-        contentDescription = null
+        modifier = modifier,
+        contentDescription = null,
+        contentScale = contentScale,
     )
 }

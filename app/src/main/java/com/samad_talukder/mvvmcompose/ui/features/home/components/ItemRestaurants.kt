@@ -1,4 +1,4 @@
-package com.samad_talukder.mvvmcompose.ui.common.components
+package com.samad_talukder.mvvmcompose.ui.features.home.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,6 +19,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.samad_talukder.mvvmcompose.R
+import com.samad_talukder.mvvmcompose.ui.common.components.CustomImage
+import com.samad_talukder.mvvmcompose.ui.common.components.CustomText
 import com.samad_talukder.mvvmcompose.ui.common.theme.RestaurantGrayTextColor
 import com.samad_talukder.mvvmcompose.ui.common.theme.RestaurantTextColor
 
@@ -29,6 +31,7 @@ import com.samad_talukder.mvvmcompose.ui.common.theme.RestaurantTextColor
 
 @Composable
 fun ItemRestaurants(
+    modifier: Modifier = Modifier,
     restaurantName: String,
     restaurantImage: Int,
     restaurantRating: String,
@@ -36,7 +39,7 @@ fun ItemRestaurants(
     foodIngredients: String,
 ) {
     Column(
-        modifier = Modifier.padding(start = 10.dp, end = 10.dp, bottom = 20.dp),
+        modifier = modifier,
     ) {
 
         CustomImage(

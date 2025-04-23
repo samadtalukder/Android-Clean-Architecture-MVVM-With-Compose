@@ -1,4 +1,4 @@
-package com.samad_talukder.mvvmcompose.ui.common.components
+package com.samad_talukder.mvvmcompose.ui.features.home.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -25,6 +25,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.samad_talukder.mvvmcompose.R
+import com.samad_talukder.mvvmcompose.ui.common.components.CustomImage
+import com.samad_talukder.mvvmcompose.ui.common.components.CustomText
 import com.samad_talukder.mvvmcompose.ui.common.theme.Brand60
 import com.samad_talukder.mvvmcompose.ui.common.theme.GrayTextColor
 import com.samad_talukder.mvvmcompose.ui.common.theme.OrangeTextColor

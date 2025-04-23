@@ -10,9 +10,9 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.samad_talukder.mvvmcompose.ui.common.components.HomeTopBar
 import com.samad_talukder.mvvmcompose.ui.common.theme.AndroidCleanArchitectureMVVMWithComposeTheme
 import com.samad_talukder.mvvmcompose.ui.features.home.HomeScreen
+import com.samad_talukder.mvvmcompose.ui.features.home.components.HomeTopBar
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
