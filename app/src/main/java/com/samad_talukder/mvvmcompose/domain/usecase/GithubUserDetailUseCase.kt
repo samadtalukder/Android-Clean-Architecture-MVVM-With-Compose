@@ -31,7 +31,7 @@ class GithubUserDetailUseCase @Inject constructor(
                         result.message.contains(
                             "not found",
                             ignoreCase = true
-                        ) -> "[${result.code}] resources not found. Please check the spelling and try again."
+                        ) -> "Resources not found. Please check the spelling and try again."
 
                         else -> result.message
                     }

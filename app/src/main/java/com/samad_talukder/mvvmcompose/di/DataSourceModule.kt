@@ -10,10 +10,13 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface DataSourceModule {
+abstract class DataSourceModule {
+
+    @Singleton
     @Binds
-    fun bindGithubUserDetailDataSource(impl: GithubUserDataSourceImpl): GithubUserDataSource
+    abstract fun bindGithubUserDetailDataSource(impl: GithubUserDataSourceImpl): GithubUserDataSource
 }

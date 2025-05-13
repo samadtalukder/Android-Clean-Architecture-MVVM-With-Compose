@@ -14,9 +14,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-interface RepositoryModule {
+abstract class RepositoryModule {
 
-    @Binds
     @Singleton
-    fun bindGithubUserDetailRepository(impl: GithubUserDetailRepositoryImpl): GithubUserDetailRepository
+    @Binds
+    abstract fun provideGithubUserDetailRepository(impl: GithubUserDetailRepositoryImpl): GithubUserDetailRepository
 }
