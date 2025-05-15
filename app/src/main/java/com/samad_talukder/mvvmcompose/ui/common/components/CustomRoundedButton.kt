@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) 2025 Samad Talukder. All rights reserved.
+ * github.com/samadtalukder
+ **/
 package com.samad_talukder.mvvmcompose.ui.common.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -15,10 +19,6 @@ import com.samad_talukder.mvvmcompose.ui.common.theme.Brand60
 import com.samad_talukder.mvvmcompose.ui.common.theme.Grey60
 import com.samad_talukder.mvvmcompose.ui.common.theme.White
 
-
-/**
- *  Copyright (C) 2024. Samad Talukder (https://www.samadtalukder.com)
- */
 
 @Composable
 fun CustomRoundedButton(
