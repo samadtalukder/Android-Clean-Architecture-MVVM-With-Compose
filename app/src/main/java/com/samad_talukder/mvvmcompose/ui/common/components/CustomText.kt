@@ -1,3 +1,7 @@
+/**
+ * Copyright (c) 2025 Samad Talukder. All rights reserved.
+ * github.com/samadtalukder
+ **/
 package com.samad_talukder.mvvmcompose.ui.common.components
 
 import androidx.compose.material3.MaterialTheme
@@ -13,10 +17,6 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 import com.samad_talukder.mvvmcompose.ui.common.theme.Black
 
-/**
- *  Copyright (C) 2024. Samad Talukder (https://www.samadtalukder.com)
- */
-
 @Composable
 fun CustomText(
     text: String,
@@ -24,7 +24,7 @@ fun CustomText(
     style: TextStyle = MaterialTheme.typography.displayLarge,
     textColor: Color = Black,
     fontSize: TextUnit = 16.sp,
-    fontWeight: FontWeight = FontWeight.W400,
+    fontWeight: FontWeight = FontWeight.Normal,
     lineHeight: TextUnit = fontSize * 1.5,
     letterSpacing: TextUnit = (-0.5).sp,
     maxLines: Int = Int.MAX_VALUE,

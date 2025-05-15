@@ -24,6 +24,7 @@ espressoCore = "3.6.1"
 
 [libraries]
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+material3-icon = { group = "androidx.compose.material", name = "material-icons-extended" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
 #Activity Compose
