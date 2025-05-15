@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gourmet</string>
+    <string name="app_name">Github User</string>
     <string name="error_no_internet_connection">No Internet\n</string>
     <string name="error_timeout">Time out\n</string>
 </resources>

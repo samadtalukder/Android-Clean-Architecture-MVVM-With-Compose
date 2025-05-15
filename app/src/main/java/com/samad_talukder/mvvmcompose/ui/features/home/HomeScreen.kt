@@ -22,7 +22,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -100,7 +99,12 @@ fun InputTypeScreen(
                 value = query,
                 onValueChange = onQueryChange,
                 modifier = Modifier.fillMaxWidth(),
-                placeholder = { Text("Type Github Username") },
+                placeholder = {
+                    CustomText(
+                        text = "Type Github Username",
+                        textColor = GrayTextColor
+                    )
+                },
                 singleLine = true,
                 shape = RoundedCornerShape(8.dp),
                 colors = OutlinedTextFieldDefaults.colors(
@@ -146,7 +150,7 @@ fun InputTypeScreen(
                     fontWeight = FontWeight.Medium,
                     fontSize = 20.sp,
                     letterSpacing = 0.5.sp,
-                    textColor = if (query.isNotEmpty()) ButtonColor else GrayTextColor
+                    textColor = if (query.isNotEmpty()) White else GrayTextColor
                 )
             }
 

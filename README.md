@@ -15,12 +15,10 @@
   - Navigation
 - **Networking:** Retrofit2 & OkHttp3:.
 - **Image loading:** Coil.
-- **Logging:** Timber.
-- **Parsing:** KotlinX serialization.
+- **Parsing:** Gson.
 - **Testing Framework:**
   - MocckK 
-  - Espresso 
-  - Turbine
+  - Espresso
   - Google Truth
 
 
@@ -31,31 +29,25 @@ The project follows the MVVM (Model-View-ViewModel) architecture pattern to sepa
 ### Directory Structure
  ```
 app/
+├── data/                # Data Layer
+│   ├── datasource/
+│   ├── remote/
+│   │   ├── model/
 ├── di/                  # Dependency Injection
 │   ├── 
-├── data/                # Data Layer
-│   ├── remote/
-│   │   ├── api/         # Retrofit interfaces
-│   │   └── dto/         # Data Transfer Objects
-│   ├── local/
-│   │   ├── dao/         # Room DAOs
-│   │   └── entity/      # Room Entities
-│   ├── repository/      # Repository implementations
 ├── domain/              # Domain Layer
-│   ├── model/           # Domain models
-│   ├── repository/      # Repository interfaces
-│   └── usecase/         # Business logic use cases
+│   ├── models/          
+│   ├── repository/     
+│   └── usecase/         
 ├── ui/                  # UI Layer
 │   ├── common/
-│   │   ├── components/  # Reusable Compose components
-│   │   ├── theme/       # App theme
+│   │   ├── components/  
+│   │   ├── theme/       
 │   └── features/        # Features organized by screens
-│       ├── auth/
-│       │   ├── LoginScreen.kt
-│       │   └── LoginViewModel.kt
-└── utils/                # App utilities
-    ├── extension/       # Kotlin extensions
-    └── Constants.kt 
+│       ├── home/
+│   └── nav/
+│   └── viewmodel/
+└── utils/               # App utilities
  ```
 
 ## 🚀 Getting Started
@@ -102,29 +94,9 @@ git clone https://github.com/samadtalukder/Android-Clean-Architecture-MVVM-With-
 - Maintain 80% test coverage
 - Use meaningful variable and function names
 
-## CI/CD Dependencies
+## Demo
 
-This project utilizes several third-party tools to automate and optimize the Continuous Integration and Continuous Delivery (CI/CD) pipeline. These tools are **not included** in the final packaged application.
-
----
-
-### 🔧 Fastlane
-
-- **Website**: [https://fastlane.tools/](https://fastlane.tools/)
-- **Purpose**: Automates the building, signing, and distribution of applications.
-- **License**: MIT License
-
-Fastlane enables seamless deployment of Android builds to testing services (e.g., Firebase App Distribution) or directly to the Play Store. It's also used for managing versioning and screenshots during release cycles.
-
----
-
-### ✅ Kover
-
-- **Repository**: [https://github.com/Kotlin/kotlinx-kover](https://github.com/Kotlin/kotlinx-kover)
-- **Purpose**: Kotlin code coverage reporting toolset.
-- **License**: Apache License 2.0
-
-Kover provides metrics and visual reports for test coverage, helping to ensure the codebase is thoroughly tested and adheres to quality standards.
+<img src="demo/app_demo" width="200"/>
 
 
 
