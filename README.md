@@ -96,7 +96,7 @@ git clone https://github.com/samadtalukder/Android-Clean-Architecture-MVVM-With-
 
 ## Demo
 
-<img src="demo/app_demo" width="200"/>
+<img src="demo/app_demo.gif" width="200"/>
 
 
 
