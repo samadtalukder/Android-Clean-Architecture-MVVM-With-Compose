@@ -11,7 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.samad_talukder.mvvmcompose.ui.details.GithubUserDetailsScreen
+import com.samad_talukder.mvvmcompose.ui.features.details.GithubUserDetailsScreen
 import com.samad_talukder.mvvmcompose.ui.features.home.HomeScreen
 
 @Composable
