@@ -2,7 +2,7 @@
  * Copyright (c) 2025 Samad Talukder. All rights reserved.
  * github.com/samadtalukder
  **/
-package com.samad_talukder.mvvmcompose.ui.details
+package com.samad_talukder.mvvmcompose.ui.features.details
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -27,7 +27,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -40,6 +39,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.samad_talukder.mvvmcompose.R
@@ -51,8 +51,8 @@ import com.samad_talukder.mvvmcompose.ui.common.theme.HeaderBGColor
 import com.samad_talukder.mvvmcompose.ui.common.theme.OrangeTextColor
 import com.samad_talukder.mvvmcompose.ui.common.theme.RestaurantTextColor
 import com.samad_talukder.mvvmcompose.ui.common.theme.White
-import com.samad_talukder.mvvmcompose.ui.details.components.ErrorScreen
-import com.samad_talukder.mvvmcompose.ui.details.components.LoadingScreen
+import com.samad_talukder.mvvmcompose.ui.features.details.components.ErrorScreen
+import com.samad_talukder.mvvmcompose.ui.features.details.components.LoadingScreen
 import com.samad_talukder.mvvmcompose.ui.viewmodel.GitHubUserDetailViewModel
 import com.samad_talukder.mvvmcompose.utils.UiState
 
@@ -70,7 +70,7 @@ fun GithubUserDetailsScreen(
         }
     }
 
-    val uiState by viewModel.userState.collectAsState()
+    val uiState by viewModel.userState.collectAsStateWithLifecycle()
 
     Surface(
         modifier = Modifier

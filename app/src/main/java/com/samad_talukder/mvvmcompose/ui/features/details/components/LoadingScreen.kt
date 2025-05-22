@@ -2,7 +2,7 @@
  * Copyright (c) 2025 Samad Talukder. All rights reserved.
  * github.com/samadtalukder
  **/
-package com.samad_talukder.mvvmcompose.ui.details.components
+package com.samad_talukder.mvvmcompose.ui.features.details.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
