@@ -17,7 +17,7 @@
 - **Image loading:** Coil.
 - **Parsing:** Gson.
 - **Testing Framework:**
-  - MocckK 
+  - MockK 
   - Espresso
   - Google Truth
 
