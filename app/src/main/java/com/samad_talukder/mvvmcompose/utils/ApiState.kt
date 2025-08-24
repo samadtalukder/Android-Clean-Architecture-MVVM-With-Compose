@@ -39,12 +39,12 @@ suspend fun <T> safeApiCall(
         ApiState.Error(errorMessage, errorCode)
     }
 
-} catch (ex: Exception) {
-    apiError(ex.message ?: ex.toString())
-} catch (io: IOException) {
-    apiError(io.message ?: "No Internet")
 } catch (sc: SocketTimeoutException) {
     apiError(sc.message ?: "Timeout")
+} catch (io: IOException) {
+    apiError(io.message ?: "No Internet")
+} catch (ex: Exception) {
+    apiError(ex.message ?: ex.toString())
 }
 
 fun <T> apiError(errorMessage: String): ApiState<T> = ApiState.Error(errorMessage)
